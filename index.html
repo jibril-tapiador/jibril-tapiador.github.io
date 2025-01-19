@@ -1,1 +1,149 @@
-Hello World
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jibril Tapiador | Software Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              black: { primary: '#101010', secondary: '#151515' },
+              white: { primary: '#f7f7f7', secondary: '#eeeeee' },
+            },
+            fontFamily: {
+              sans: [
+                'Inter',
+                'ui-sans-serif',
+                'system-ui',
+                'sans-serif',
+                '"Apple Color Emoji"',
+                '"Segoe UI Emoji"',
+                '"Segoe UI Symbol"',
+                '"Noto Color Emoji"',
+              ],
+            },
+          },
+        }
+      }
+    </script>
+    <style>
+      :root { --highlight: red; }
+
+      .label-python {
+        background-color: #384d54;
+        color: #384d54;
+      }
+
+      .label-bash {
+        background-color: #dea584;
+        color: #dea584;
+      }
+    </style>
+  </head>
+  <body class="bg-black-primary text-white-primary">
+    <div class="container mx-auto flex h-full min-h-screen flex-col px-8 py-4">
+      <nav class="mb-8">
+        <a aria-current="page" href="/" class="text-3xl lowercase text-black">
+        Jibril Tapiador
+        </a>
+      </nav>
+      <div class="flex w-full flex-col gap-12 pb-8">
+        <section class="grid grid-cols-1 items-center gap-4 lg:grid-cols-2">
+          <div class="flex flex-col gap-4">
+            <h1 class="text-5xl font-bold text-black lg:text-6xl">
+              <span class="text-[color:var(--highlight)] duration-300">Hi,</span> I'm Jib
+            </h1>
+            <p class="text-xl">
+              I am a 24 years old software developer with 6 years of real-world experience working as a Full Stack developer mainly with Ruby on Rails. Lately, I have been writing a lot of Python.
+            </p>
+            <p class="text-xl">
+              Some projects I've worked on include:
+            </p>
+            <ul class="mb-4 ml-8 list-disc text-xl">
+              <li>
+                A video recording tool for <a class="underline" href="https://dashcam.io/" rel="noreferrer noopener" target="_blank">capturing highlights in software</a>.
+              </li>
+              <li>
+                An e-commerce pharmacy platform where <a class="underline" href="#" rel="noreferrer noopener" target="_blank">doctors can video meet with patients</a>.
+              </li>
+              <li>
+                A CRM for the <a class="underline" href="https://customtattoodesign.ca/" target="_blank">biggest online tattoo design website</a>.
+              </li>
+            </ul>
+            <p class="text-xl">
+              In my spare time, I love to use <a class="underline" target="_blank" href="https://leetcode.com/u/jibriltapiador/">LeetCode</a> to sharpen my Data Structures and Algorithms skills.
+            </p>
+            <div class="flex gap-4">
+              <a aria-label="Link to my Github" href="https://github.com/jibril-tapiador" rel="noreferrer noopener" target="_blank">
+              <img src="assets/icons/github.svg" class="aspect-square size-12 rounded bg-white-primary p-2 text-white-primary duration-300 hover:text-[color:var(--highlight)]">
+              </a>
+              <a aria-label="Link to my LinkedIn" href="https://www.linkedin.com/in/jibriltapiador" rel="noreferrer noopener" target="_blank">
+              <img src="assets/icons/linkedin.svg" class="aspect-square size-12 rounded bg-white-primary p-2 text-white-primary duration-300 hover:text-[color:var(--highlight)]">
+              </a>
+            </div>
+          </div>
+          <picture class="order-first mx-auto w-9/12 lg:order-1 lg:mr-0 lg:w-fit lg:text-right">
+            <img src="assets/jib.jpg" alt="Image of Jibril Tapiador" class="rounded-full lg:mr-0 mx-auto lg:ml-auto lg:text-right" width="350">
+          </picture>
+        </section>
+        <section class="flex flex-col gap-8">
+          <h2 class="text-4xl font-bold text-black lg:text-5xl">
+            Open Projects
+          </h2>
+          <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+            <!--[-->
+            <div class="flex flex-col gap-1 rounded bg-white-secondary p-4">
+              <a class="text-black-primary text-xl font-semibold" href="#" rel="noreferrer noopener" target="_blank">Arch Secure</a>
+              <p class="mb-5 text-black-primary">A Python program for hardening an Arch Linux setup.</p>
+              <div class="mt-auto flex gap-2">
+                <div class="rounded px-2 py-1 label-python">
+                  <p class="text-sm font-medium brightness-50">Python</p>
+                </div>
+                <div class="rounded px-2 py-1 label-bash">
+                  <p class="text-sm font-medium brightness-50">Bash</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="flex  flex-col gap-4">
+          <h2 class="text-4xl font-bold text-black lg:text-5xl mb-4">
+            Resume
+          </h2>
+
+          <a href="assets/jibril-tapiador-resume-cv.pdf" class="transition text-xl underline" target="_blank">Click here</a>
+        </section>
+        <section class="flex flex-col gap-2">
+          <h2 class="text-4xl font-bold text-black lg:text-5xl">
+            Wanna get in touch?
+          </h2>
+          <p class="text-xl text-black">
+            I am always available for exciting discussions
+          </p>
+          <div>
+            <div class="my-2 flex items-center gap-2">
+              <object type="image/svg+xml" data="assets/icons/mail.svg"></object>
+              <a class="text-xl underline" href="mailto:tapiador@jib.is">tapiador@jib.is</a>
+            </div>
+            <div class="mb-4 flex items-center gap-2">
+              <object type="image/svg+xml" data="assets/icons/loc_pin.svg"></object>
+              <p class="text-xl"> PH, Davao </p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <a aria-label="Link to my Github" href="https://github.com/jibril-tapiador" rel="noreferrer noopener" target="_blank">
+            <img src="assets/icons/github.svg" class="aspect-square size-12 rounded bg-white-primary p-2 text-white-primary duration-300 hover:text-[color:var(--highlight)]">
+            </a>
+            <a aria-label="Link to my LinkedIn" href="https://www.linkedin.com/in/jibriltapiador/" rel="noreferrer noopener" target="_blank">
+            <img src="assets/icons/linkedin.svg" class="aspect-square size-12 rounded bg-white-primary p-2 text-white-primary duration-300 hover:text-[color:var(--highlight)]">
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
