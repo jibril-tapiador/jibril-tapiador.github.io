@@ -427,7 +427,7 @@
       '<div class="card-content">' +
       "Got any questions or want to chat? Feel free to reach out!" +
       '<div class="contact-email">' +
-      '<a href="mailto:tapiador@jib.is">tapiador@jib.is</a>' +
+      '<a href="mailto:jib.tapiador@protonmail.com">jib.tapiador@protonmail.com</a>' +
       "</div>" +
       "</div>" +
       "</div>" +
