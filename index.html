@@ -1,146 +1,168 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jibril Tapiador | Software Developer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              black: { primary: '#101010', secondary: '#151515' },
-              white: { primary: '#f7f7f7', secondary: '#eeeeee' },
-            },
-            fontFamily: {
-              sans: [
-                'Inter',
-                'ui-sans-serif',
-                'system-ui',
-                'sans-serif',
-                '"Apple Color Emoji"',
-                '"Segoe UI Emoji"',
-                '"Segoe UI Symbol"',
-                '"Noto Color Emoji"',
-              ],
-            },
-          },
-        }
-      }
-    </script>
-    <!-- Cloudflare Web Analytics -->
-    <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
-      data-cf-beacon='{"token": "ab13fe81d591407b999a216d5d012b7e"}'>
-    </script>
-    <!-- End Cloudflare Web Analytics -->
-    <style>
-      :root { --highlight: red; }
+<html lang="en">
 
-      .label-python {
-        background-color: #384d54;
-        color: #384d54;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jibril Tapiador</title>
+  <meta name="description"
+    content="Jibril Tapiador is a senior Ruby on Rails engineer and technical lead based in Davao, Philippines." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="canonical" href="https://www.jibriltapiador.com/" />
 
-      .label-ruby {
-        background-color: #e47f60;
-        color: #ff3e00
-      }
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Jibril Tapiador" />
+  <meta property="og:description"
+    content="Senior Ruby on Rails engineer and technical lead based in Davao, Philippines." />
+  <meta property="og:url" content="https://www.jibriltapiador.com/" />
+  <meta property="og:image" content="https://www.jibriltapiador.com/assets/jib.jpg" />
+  <meta name="twitter:card" content="summary" />
 
-      .label-bash {
-        background-color: #dea584;
-        color: #dea584;
+  <script>
+    // Applied before first paint so the correct theme renders without a flash.
+    (function () {
+      var theme = "system";
+      try {
+        var stored = localStorage.getItem("theme");
+        if (stored === "light" || stored === "dark" || stored === "system") theme = stored;
+      } catch (err) { }
+      var dark = theme === "dark" ||
+        (theme === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+      if (dark) {
+        document.documentElement.classList.add("dark");
+        document.documentElement.style.colorScheme = "dark";
       }
+    })();
+  </script>
 
-      .text-xl {
-        font-size: 1.15rem !important;
-      }
-    </style>
-  </head>
-  <body class="bg-black-primary text-white-primary">
-    <div class="container mx-auto flex h-full min-h-screen flex-col px-8 py-4">
-      <nav class="mb-8">
-        <a aria-current="page" href="/" class="text-3xl lowercase text-black">
-        Jibril Tapiador
-        </a>
-      </nav>
-      <div class="flex w-full flex-col gap-12 pb-8">
-        <section class="grid grid-cols-1 items-center gap-4 lg:grid-cols-2">
-          <div class="flex flex-col gap-4">
-            <h1 class="text-4xl font-bold text-black lg:text-5xl">
-              <span class="text-[color:var(--highlight)] duration-300">Hi,</span> I'm Jib
-            </h1>
-            <p class="text-xl">
-              I'm a Senior Ruby on Rails Software Developer with over 6+ years of experience working as a Full Stack developer.
-            </p>
-            <p class="text-xl">
-              Some projects I've worked on include:
-            </p>
-            <ul class="ml-8 list-disc text-xl">
-              <li>
-                A  <a class="underline" href="https://apps.apple.com/us/app/bump-connect-social-community/id6475402930" rel="noreferrer noopener" target="_blank">social media app</a>.
-              </li>
-              <li>
-                A video recording tool for <a class="underline" href="https://dashcam.io/" rel="noreferrer noopener" target="_blank">capturing highlights in software</a>.
-              </li>
-              <li>
-                A telehealth pharmacy platform connecting doctors and patients by video.
-              </li>
-              <li>
-                A CRM for the <a class="underline" href="https://customtattoodesign.ca/" target="_blank">biggest online tattoo design website</a>.
-              </li>
-            </ul>
-            <p class="mb-4 text-xl">
-              In my spare time, I enjoy using <a class="underline" target="_blank" href="https://leetcode.com/u/jibriltapiador/">LeetCode</a> to sharpen my Data Structures, Algorithms, and PostgreSQL skills.
-            </p>
-            <div class="flex gap-4">
-              <a aria-label="Link to my Github" href="https://github.com/jibril-tapiador" rel="noreferrer noopener" target="_blank">
-              <img src="assets/icons/github.svg" class="aspect-square size-12 rounded bg-white-primary p-2 text-white-primary duration-300 hover:text-[color:var(--highlight)]">
-              </a>
-              <a aria-label="Link to my LinkedIn" href="https://www.linkedin.com/in/jib-tapiador" rel="noreferrer noopener" target="_blank">
-              <img src="assets/icons/linkedin.svg" class="aspect-square size-12 rounded bg-white-primary p-2 text-white-primary duration-300 hover:text-[color:var(--highlight)]">
-              </a>
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Cloudflare Web Analytics -->
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+    data-cf-beacon='{"token": "ab13fe81d591407b999a216d5d012b7e"}'>
+  </script>
+  <!-- End Cloudflare Web Analytics -->
+</head>
+
+<body>
+  <div class="svg-background"></div>
+
+  <div class="app">
+    <header>
+      <div class="nav-wrap">
+        <nav class="nav nav--desktop" aria-label="Main">
+          <a class="nav-link" href="#/" data-route="/">Home</a>
+          <a class="nav-link" href="#/contact" data-route="/contact">Contact</a>
+          <a class="nav-link" href="#/skills" data-route="/skills">Skills</a>
+
+          <div class="theme">
+            <button class="theme-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+              <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <circle cx="12" cy="12" r="4" />
+                <path d="M12 2v2" />
+                <path d="M12 20v2" />
+                <path d="m4.93 4.93 1.41 1.41" />
+                <path d="m17.66 17.66 1.41 1.41" />
+                <path d="M2 12h2" />
+                <path d="M20 12h2" />
+                <path d="m6.34 17.66-1.41 1.41" />
+                <path d="m19.07 4.93-1.41 1.41" />
+              </svg>
+              <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+              </svg>
+              <span class="sr-only">Toggle theme</span>
+            </button>
+            <div class="theme-menu" role="menu" aria-label="Theme" hidden>
+              <button type="button" role="menuitemradio" data-theme="light">Light</button>
+              <button type="button" role="menuitemradio" data-theme="dark">Dark</button>
+              <button type="button" role="menuitemradio" data-theme="system">System</button>
             </div>
           </div>
-          <picture class="order-first mx-auto w-9/12 lg:order-1 lg:mr-0 lg:w-fit lg:text-right">
-            <img src="assets/jib.jpg" alt="Image of Jibril Tapiador" class="rounded-full lg:mr-0 mx-auto lg:ml-auto lg:text-right" width="350">
-          </picture>
-        </section>
-        <section class="flex  flex-col gap-4">
-          <h2 class="text-3xl font-bold text-black lg:text-4xl mb-4">
-            CV / Resume
-          </h2>
+        </nav>
 
-          <a href="assets/jibril-tapiador-cv.pdf" class="transition text-xl underline" target="_blank">Click here</a>
-        </section>
-        <section class="flex flex-col gap-2">
-          <h2 class="text-3xl font-bold text-black lg:text-4xl">
-            Wanna get in touch?
-          </h2>
-          <p class="text-xl text-black">
-            I am always available for exciting discussions
-          </p>
-          <div>
-            <div class="my-2 flex items-center gap-2">
-              <object type="image/svg+xml" data="assets/icons/mail.svg"></object>
-              <a class="text-xl underline" href="mailto:tapiador@jib.is">tapiador@jib.is</a>
-            </div>
-            <div class="mb-4 flex items-center gap-2">
-              <object type="image/svg+xml" data="assets/icons/loc_pin.svg"></object>
-              <p class="text-xl"> PH, Davao </p>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <a aria-label="Link to my Github" href="https://github.com/jibril-tapiador" rel="noreferrer noopener" target="_blank">
-            <img src="assets/icons/github.svg" class="aspect-square size-12 rounded bg-white-primary p-2 text-white-primary duration-300 hover:text-[color:var(--highlight)]">
-            </a>
-            <a aria-label="Link to my LinkedIn" href="https://www.linkedin.com/in/jib-tapiador" rel="noreferrer noopener" target="_blank">
-            <img src="assets/icons/linkedin.svg" class="aspect-square size-12 rounded bg-white-primary p-2 text-white-primary duration-300 hover:text-[color:var(--highlight)]">
-            </a>
-          </div>
-        </section>
+        <nav class="nav nav--mobile" aria-label="Main">
+          <button class="menu-trigger" type="button" aria-expanded="false" aria-controls="drawer">
+            Menu
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </button>
+        </nav>
       </div>
+    </header>
+
+    <div class="drawer-overlay" id="drawer-overlay" hidden></div>
+    <div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+      <div class="drawer-header">
+        <h2>Menu</h2>
+        <div class="theme">
+          <button class="theme-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              aria-hidden="true">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2" />
+              <path d="M12 20v2" />
+              <path d="m4.93 4.93 1.41 1.41" />
+              <path d="m17.66 17.66 1.41 1.41" />
+              <path d="M2 12h2" />
+              <path d="M20 12h2" />
+              <path d="m6.34 17.66-1.41 1.41" />
+              <path d="m19.07 4.93-1.41 1.41" />
+            </svg>
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              aria-hidden="true">
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+            </svg>
+            <span class="sr-only">Toggle theme</span>
+          </button>
+          <div class="theme-menu" role="menu" aria-label="Theme" hidden>
+            <button type="button" role="menuitemradio" data-theme="light">Light</button>
+            <button type="button" role="menuitemradio" data-theme="dark">Dark</button>
+            <button type="button" role="menuitemradio" data-theme="system">System</button>
+          </div>
+        </div>
+      </div>
+      <a class="nav-link" href="#/" data-route="/">Home</a>
+      <a class="nav-link" href="#/contact" data-route="/contact">Contact</a>
+      <a class="nav-link" href="#/skills" data-route="/skills">Skills</a>
     </div>
-  </body>
+
+    <main class="main" id="view"></main>
+
+    <footer class="footer">
+      <div class="footer-socials">
+        <a href="https://github.com/jibril-tapiador" target="_blank" rel="noreferrer noopener"
+          aria-label="Link to my Github">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path
+              d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+            <path d="M9 18c-4.51 2-5-2-7-2" />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/jib-tapiador" target="_blank" rel="noreferrer noopener"
+          aria-label="Link to my LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+            <rect width="4" height="12" x="2" y="9" />
+            <circle cx="4" cy="4" r="2" />
+          </svg>
+        </a>
+      </div>
+      <p class="footer-copy">&copy; <span id="year">2026</span> Jibril Tapiador</p>
+    </footer>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+
 </html>
