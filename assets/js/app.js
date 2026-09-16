@@ -55,7 +55,8 @@
     } catch (err) {
       /* Storage can be unavailable in private mode. */
     }
-    return "system";
+    /* Light by default, regardless of the OS preference. */
+    return "light";
   }
 
   function applyTheme(theme) {

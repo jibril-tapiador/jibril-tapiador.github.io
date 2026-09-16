@@ -20,8 +20,9 @@
 
   <script>
     // Applied before first paint so the correct theme renders without a flash.
+    // Defaults to light until the visitor picks otherwise, even on a dark OS.
     (function () {
-      var theme = "system";
+      var theme = "light";
       try {
         var stored = localStorage.getItem("theme");
         if (stored === "light" || stored === "dark" || stored === "system") theme = stored;
