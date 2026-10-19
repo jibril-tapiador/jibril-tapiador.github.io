@@ -368,7 +368,7 @@
       '<div class="hero-text">' +
       '<div class="hero-name">Jibril Tapiador</div>' +
       '<div class="hero-role">Senior Ruby on Rails Engineer</div>' +
-      '<div class="hero-meta">@Davao, Philippines</div>' +
+      '<div class="hero-meta">@Montevideo, Uruguay</div>' +
       "</div>" +
       "</div>" +
       "</div>"
@@ -383,7 +383,7 @@
       '<div class="card-header"><div class="card-title">Hey there!</div></div>' +
       '<div class="card-content">' +
       "My name is Jibril Tapiador and I'm a senior Ruby on Rails engineer and " +
-      "technical lead based in Davao, Philippines. With 6+ years of experience " +
+      "technical lead based in Montevideo, Uruguay. With 6+ years of experience " +
       "building and scaling web products, I care most about software that stays " +
       "fast, maintainable, and genuinely useful to the people who depend on it." +
       "<br><br>" +
